@@ -2,15 +2,13 @@
   "name": "ai-for-developers-project-386",
   "version": "0.1.0",
   "private": true,
-  "description": "Calendly-like booking service — design-first API contract (TypeSpec)",
+  "description": "Calendly-like booking service monorepo (TypeSpec contract + React frontend + Rust backend)",
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
-    "compile": "tsp compile .",
-    "watch": "tsp compile . --watch",
-    "format": "tsp format \"**/*.tsp\""
-  },
-  "devDependencies": {
-    "@typespec/compiler": "^1.11.0",
-    "@typespec/http": "^1.11.0",
-    "@typespec/openapi3": "^1.11.0"
+    "contract:compile": "pnpm --filter contract compile",
+    "contract:watch": "pnpm --filter contract watch",
+    "frontend:dev": "pnpm --filter frontend dev",
+    "frontend:build": "pnpm --filter frontend build",
+    "frontend:preview": "pnpm --filter frontend preview"
   }
 }

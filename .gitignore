@@ -1,5 +1,7 @@
-node_modules/
-tsp-output/
+**/node_modules/
+**/dist/
+**/target/
+**/tsp-output/
 *.log
 .DS_Store
 .idea/
